@@ -1,6 +1,9 @@
 import cv2
 
 cap = cv2.VideoCapture(0)
+## To detect face and eye in a video pass the video file as mentioned below
+#cap = cv2.VideoCapture('video.mp4')
+
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
 
